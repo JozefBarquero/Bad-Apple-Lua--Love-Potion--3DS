@@ -1,0 +1,5 @@
+ffmpeg -i final_bad_apple.mp4 -vf "fps=3,scale=-1:240,format=monob" -pix_fmt monob -compression_level 9 frames/frame_%04d.png
+
+python3 ./main.py frames            By: https://github.com/TurtleP/Convert3x (.png to .t3x) tkm
+
+ffmpeg -i final_bad_apple.mp4 -ac 2 -ar 22050 -sample_fmt s16 final_bad_apple.wav
